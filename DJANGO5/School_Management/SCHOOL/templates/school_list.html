@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School List</title>
+    <style>
+     body {background-color: powderblue;}
+     h1   {color: blue;
+     font-size:60px;
+     font-family: verdana;
+     text-align:center;}
+     p    {color: purple;
+     font-family: verdana;
+     }
+     a  {  font-family: verdana;
+     color: red;}
+     button { color:yellow;}
+</style>
+</head>
+<body>
+
+    <h1>This is a school List</h1>
+
+    <a style="font-size:30px; text-align:center;" href="{% url 'school_create' %}">Add New school</a>
+    <ul>
+        {% for school in schools %}
+            <li>
+                <p >{{ school.Name }}</p>
+                <button> <a href="{% url 'school_update' school.id %}">Edit</a> </button>
+                <button><a href="{% url 'school_delete' school.id %}">Delete</a></button>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
