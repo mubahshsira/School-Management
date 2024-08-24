@@ -1,5 +1,7 @@
 SCHOOL MANAGEMENT SYSTEM 
+
 Project Name: School Management System
+
 [eShikhon project]
 - name
 - address
