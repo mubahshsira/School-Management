@@ -1,4 +1,4 @@
-School Management System
+PROJECT NAME:School Management System
 
 - name
 - address
